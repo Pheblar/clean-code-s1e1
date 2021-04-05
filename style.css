@@ -72,6 +72,9 @@ button:hover {
     margin: 0;
     text-transform: uppercase;
 }
+.task[for="new-task"] {
+    width: 100%;
+}
 input[type="text"] {
     margin: 0;
     font-size: 18px;
