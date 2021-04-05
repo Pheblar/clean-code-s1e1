@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -37,15 +37,15 @@ body {
 .central__row-wrapper {
     display: flex;
 }
-ul {
+.task-list {
     margin: 0;
     padding: 0px;
 }
-li, 
-h3 {
+.task-unit, 
+.article {
     list-style: none;
 }
-input,
+.task,
 button {
     outline: none;
 }
@@ -62,8 +62,8 @@ button:hover {
     color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for='new-task'] {
+.article, 
+.task[for='new-task'] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -84,16 +84,16 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+.task-unit__area:focus {
     color: #333;
 }
 
 /* New Task */
-label[for='new-task'] {
+.task[for='new-task'] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
     width: 318px;
 }
 
@@ -123,12 +123,12 @@ li > label {
 li >    input[type="text"] {
     width: 226px;
 }
-button.task-unit__btn-delete img {
+.task-unit__btn-delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.task-unit__btn-delete img:hover {
+.task-unit__btn-delete img:hover {
     transform: rotateZ(0);
 }
 
@@ -143,11 +143,11 @@ ul li input[type=text] {
     display: none;
 }
 
-ul li.edit-mode  input[type=text] {
+.edit-mode  input[type=text] {
     display: inline-block;
     width: 224px;
 }
 
-ul li.edit-mode label {
+.edit-mode label {
     display: none;
 }
